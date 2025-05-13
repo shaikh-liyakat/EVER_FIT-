@@ -1,0 +1,301 @@
+*
+{
+     margin: 0%;
+     padding: 0%;
+     
+}
+
+body{
+     
+     height: 100%;
+     width: 100%;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     /* display: flex; */
+     /* justify-content: center; */
+     /* align-items: center; */
+}
+
+
+div.big_container
+{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     /* columns: 300px; */
+     margin: auto;
+     height: fit-content;
+     width: 90%;
+     background-color: #3a85fff2;
+     justify-content: space-around;
+}
+
+
+
+div.front_content , div.back_content
+{
+     height: 100%;
+     width:  100%;
+     backdrop-filter: blur(10px);
+     /* background-color: rgb(96, 87, 165); */
+}
+
+
+div.front_content 
+{
+    backdrop-filter: blur(10px);
+    opacity: 1;
+}
+
+div.back_content
+{
+     transform: rotateY(180deg);
+     transition: all 0.8s ease-in-out;
+     margin-top:30%;
+     height: 50%;
+     opacity: 0;
+     margin-bottom:250px ;
+     letter-spacing: 2px;
+     font-size: larger;
+     /* backdrop-filter: blur(10px); */
+
+     /* flex-grow: 1; */
+
+}
+
+div.container 
+{
+     display: flex;
+     flex-wrap: wrap;
+     /* flex-direction: column; */
+     padding: -20px;
+     width: 30%;
+     height:30%;
+     margin-block: 10%;
+     margin-bottom: 10%;
+     border-radius: 15px;
+     margin-inline: auto;
+     background-color: rgba(255, 255, 255, 0.251);
+     backdrop-filter: blur(10px);
+     transition: all 0.8s ease-in-out;
+     transform-style: preserve-3d;
+     overflow: hidden;
+     
+
+}
+
+@media only screen and (max-width: 853px) {
+     div.container {
+
+          display: flex;
+          flex-wrap: wrap;
+          /* flex-direction: column; */
+          width: 40%;
+          height: 80%;
+          margin-block: 10%;
+          margin-bottom: 10%;
+          border-radius: 15px;
+          margin-inline: auto;
+          background-color: rgba(255, 255, 255, 0.251);
+          backdrop-filter: blur(10px);
+          transition: all 0.8s ease-in-out;
+          transform-style: preserve-3d;
+          overflow: hidden;   
+     }
+}
+@media only screen and (max-width: 400px) {
+     div.container {
+
+          display: flex;
+          flex-wrap: wrap;
+          /* flex-direction: column; */
+          width: 80%;
+          height: 30%;
+          margin-block: 10%;
+          margin-bottom: 10%;
+          border-radius: 15px;
+          margin-inline: auto;
+          background-color: rgba(255, 255, 255, 0.251);
+          backdrop-filter: blur(10px);
+          transition: all 0.8s ease-in-out;
+          transform-style: preserve-3d;
+          overflow: hidden;   
+     }
+}
+
+div.container:hover div.back_content 
+{
+     transform: rotate3d(0,1,0,180deg);
+     opacity: 1;
+     
+    
+}
+
+div.container:hover div.front_content 
+{
+     opacity: 0;
+    
+}
+
+
+div.container:hover 
+{
+     transform: rotate3d(0,1,0,180deg);
+     box-shadow: 10px 8px 7px 0px rgba(4, 4, 4, 0.7);
+}
+
+
+div.front_content>h1
+{
+width: 100%;
+text-align: center;
+}
+
+
+
+img
+{
+     object-fit: cover;
+     width: 100%;
+     height: fit-content;
+
+}
+
+
+
+h1#trainers
+{
+     width: 100%;
+     text-align: center;
+     margin-top: 10%;
+}
+
+
+
+
+div.wraper
+{
+     margin-top: 5%;
+     margin-inline:auto ;
+     width: 95%;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 5%;
+     columns: 200px;
+     border-radius: 20px;
+
+}
+
+div.second_container
+{
+     
+     width: 30%;
+     height: fit-content;
+     overflow: hidden;
+     border-radius: 20px;
+     /* margin-inline: auto; */
+}
+
+@media only screen and (max-width: 400px) 
+{
+     div.second_container
+{
+     
+     width: 50%;
+     height: fit-content;
+     overflow: hidden;
+     border-radius: 20px;
+     margin-inline: auto;
+}
+}
+
+div.trainers
+{
+     
+     box-sizing: border-box;
+     border-radius: 20px;
+
+}
+
+div.trainers>img
+{
+     /* width: 90%; */
+     padding: 0;
+     margin: 0;
+     margin-top: 20%;
+     object-fit: cover;
+     border-radius: 20px;
+}
+
+div.second_container>div.info
+{
+     width: 80%;
+     text-align: center;
+     transition: all 0.8s ease-in-out;
+     backdrop-filter: blur(12px);
+     transform: translateY(100%);
+     margin-inline: 10%;
+}
+
+
+
+div.second_container:hover
+{
+     /* transform: rotate3d(0,1,0,180deg); */
+     box-shadow: 0px 0px 7px 0px rgba(4, 4, 4, 0.7);
+}
+
+div.second_container:hover div.info
+{
+     color: aliceblue;
+     background-color: rgba(0, 0, 0, 0.236);
+     /* backdrop-filter: blur(80px); */
+     transform: translateY(-150%);
+}
+
+@media only screen and (max-width: 400px) 
+{
+     div.second_container:hover div.info
+{
+     color: aliceblue;
+     transform: translateY(-30%);
+}
+}
+
+div.second_container:hover div.trainers>img
+{
+     /* opacity: 0; */
+}
+
+
+button.subs_btn
+{
+     height: fit-content;
+     font-size: 20px;
+     width: 175px;
+     margin-block: 20%;
+     margin-inline: 20%;
+}
+
+li
+{
+     padding-left:5% ;
+     
+}
+
+img
+{
+     height: 7%;
+     width: 10%;
+}
+
+ol
+{
+     margin-top: 10%;
+     /* text-decoration: line-through; */
+
+}
+
+ol:nth-child(3)
+{
+     text-decoration: line-through;
+}

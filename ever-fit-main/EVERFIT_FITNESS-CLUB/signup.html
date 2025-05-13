@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Sign up</title>
+     <link rel="stylesheet" href="login&signup.css"
+</head>
+<body>
+    
+               <form class="signup" action="#" method="post">
+                <img src="a-3d-render-of-a-lettermark-logo-for-a-fitness-clu--IIA16TnQrG7JwUfkKetEw-la8iWFKPTYKHZKNIuqM5yw_cleanup-removebg-preview.png" alt="">
+                 
+                
+
+                    <label for="usr_name">User Name</label>
+                    <br>
+                    <input type="text" id="usr_name" placeholder="Name" required>
+                    <br>
+                    <br>
+                    <label for="mob">User Mobile</label>
+                    <br>
+                    <input type="text" id="mob" inputmode="numeric" pattern="[0-9][^A-Za-z\s]{0,12}" maxlength="10" placeholder="xxxxx xxxxx"
+                    autocomplete="cc-csc" required/>
+
+
+
+                    <br><br>
+
+                    <div class="radio_btn">
+
+                    <label for="male" >Male</label>
+                    <input type="radio" id="male" name="gender" >
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender">
+
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <label for="Email">Email</label>
+                    <br>
+                    <input type="email" id="Email" placeholder="everfit@gmail.com" required>
+                     <br>
+                     <br>
+                     <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" placeholder="password"    
+                    pattern="[A-Za-z0-9\S]{8,100}"
+                    minlength="8" required >
+                    <p id="validation"> Minimum 8 Character</p>
+                     <br>
+                    <button type="submit">Submit </button>
+                    <button type="reset">Reset </button>
+                    
+                    
+                    <div class="login_btn" >     
+                         <a href="login.html" id="login_btn">
+                              Login 
+                         </a>
+                    </div>
+               </form>
+         
+
+          
+</body>
+</html>

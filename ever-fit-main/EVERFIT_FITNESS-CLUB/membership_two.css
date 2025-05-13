@@ -1,0 +1,353 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0e0e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    margin: 0;
+    color: #fff;
+}
+
+div.image-section
+{
+    display: flex;
+    margin-block:  0 20%;
+    margin-inline: auto;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10%;
+}
+
+div.image-section >img
+{
+    
+    object-fit: cover;
+    width: 50%;
+    margin-inline: auto;
+    
+}
+
+h1#Membership
+{
+width: 100%;
+text-align: center;
+margin-bottom: 5%;
+     
+}
+
+/* Membership Container */
+.membership-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    margin-top: 10%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+}
+
+@media screen and (max-width:450px) {
+    
+    .card-inner {
+        width: 100%;
+        margin-top: 20%;
+        height: fit-content;
+        text-align: center;
+        transition: transform 0.8s ease;
+        transform-style: preserve-3d;
+        border-radius: 15px;
+        /* margin-bottom:10%; */
+        padding-bottom: 0%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover .card-inner {
+        margin-bottom:10%;
+        transform: rotateY(180deg);
+    }
+    
+.card-front, .card-back {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    margin-bottom: 10%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.card-front {
+    background-color: #0056b3; /* Blue */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    .card-back {
+        background-color: #000; /* Black */
+        color: #fff;
+        width: 88%;
+        height: fit-content;
+        margin-top: -20%;
+        /* position: absolute; */
+        /* bottom: 40%; */
+        transform: rotateY(180deg);
+        overflow: hidden;
+
+    }
+    
+
+
+}
+
+@media screen and (max-width:950px) {
+    
+    .card-inner {
+        width: 100%;
+        margin-top: 20%;
+        height: 300px;
+        text-align: center;
+        transition: transform 0.8s ease;
+        transform-style: preserve-3d;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+
+    
+.card-front, .card-back {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 20px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    overflow: hidden;
+}
+
+.card:hover .card-inner {
+    width: 100%;
+    margin-bottom: 10%;
+    transform: rotateY(180deg);
+}
+
+.card-front {
+    background-color: #0056b3; /* Blue */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    
+    .card-back {
+        background-color: #000; /* Black */
+        color: #fff;
+        width: 120%;
+        position: absolute;
+        top:90%;
+        transform: rotateY(180deg);
+        overflow: hidden;
+    }
+
+
+}
+
+@media screen and (max-width:850px) {
+    
+    .card-inner {
+        width: 100%;
+        margin-top: 20%;
+        height: 300px;
+        text-align: center;
+        transition: transform 0.8s ease;
+        transform-style: preserve-3d;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+
+    
+.card-front, .card-back {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 20px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    overflow: hidden;
+}
+
+.card:hover .card-inner {
+    width: 100%;
+    /* margin-bottom: 10%; */
+    transform: rotateY(180deg);
+}
+
+.card-front {
+    background-color: #0056b3; /* Blue */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    
+    .card-back {
+        background-color: #000; /* Black */
+        color: #fff;
+        width: 120%;
+        position: absolute;
+        top:112%;
+        transform: rotateY(180deg);
+        overflow: hidden;
+    }
+
+
+}
+
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 20px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-front {
+    background-color: #0056b3; /* Blue */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-back {
+    background-color: #000; /* Black */
+    color: #fff;
+    width: 88%;
+    position: absolute;
+    margin-block: -100%;
+    transform: rotateY(180deg);
+}
+
+/* Card Back Content */
+.card-back ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.card-back ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Unlocked and Locked Feature Styling */
+.card-back ul li.unlocked {
+    color: #00cc66; /* Green for unlocked features */
+}
+
+.card-back ul li.locked {
+    color: #ff3333; /* Red for locked features */
+    text-decoration: line-through;
+}
+
+/* Button Styling */
+.card-back button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card-back button:hover {
+    background-color: #003d82;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .membership-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card-inner {
+        height: 350px; /* Adjust height for smaller screens */
+        padding-bottom: 40%;
+    }
+
+    .card-back {
+        background-color: #000; /* Black */
+        color: #fff;
+        width: 88%;
+        height: 100%;
+        padding-bottom: 20%;
+        margin-bottom: 50%;
+        position: absolute;
+        transform: rotateY(180deg);
+    }
+
+    .card-back ul li {
+        margin: 0 0;
+        font-size: 16px;
+    }
+
+    
+
+}
+
+/* Specific Plan Feature Control */
+.card-basic .card-back ul li:nth-child(n+4) {
+    color: #ff3333; /* Red for locked features */
+    text-decoration: line-through;
+}
+
+.card-premium .card-back ul li:nth-child(n+6) {
+    color: #ff3333; /* Red for locked features */
+    text-decoration: line-through;
+}
